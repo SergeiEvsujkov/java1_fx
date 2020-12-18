@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.*?>
+<?import javafx.scene.effect.*?>
+<?import javafx.scene.paint.*?>
+<?import javafx.geometry.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="457.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.Controller">
+   <children>
+      <Button layoutX="216.0" layoutY="365.0" mnemonicParsing="false" onAction="#doAnswerButton" prefHeight="47.0" prefWidth="173.0" text="Угадать!" />
+      <Label fx:id="hint" layoutX="216.0" layoutY="262.0" prefHeight="33.0" prefWidth="161.0" text="Введите число от 1 до 100:" />
+      <TextField fx:id="answerField" alignment="CENTER" layoutX="216.0" layoutY="303.0" onAction="#doAnswerButton" prefHeight="47.0" prefWidth="173.0">
+         <padding>
+            <Insets bottom="3.0" left="3.0" right="3.0" top="3.0" />
+         </padding>
+         <font>
+            <Font size="33.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="DEFAULT" />
+         </cursor>
+      </TextField>
+      <Label fx:id="result" alignment="CENTER" contentDisplay="CENTER"  layoutY="80.0" prefHeight="149.0" prefWidth="600.0" text="?" textFill="#2130b5">
+         <font>
+            <Font size="80.0" />
+         </font>
+      </Label>
+      <Label layoutX="186.0" layoutY="25.0" text="Количество оставшихся попыток:" />
+      <Label fx:id="attempt" layoutX="383.0" layoutY="25.0" text="10" />
+   </children>
+   <padding>
+      <Insets bottom="3.0" left="3.0" right="3.0" top="3.0" />
+   </padding>
+</AnchorPane>
