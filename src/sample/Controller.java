@@ -10,7 +10,7 @@ public class Controller {
     int answer;
     Random random = new Random();
     int attemptForUser;
-    
+
     @FXML
     public void initialize() {
         answer = random.nextInt(99) + 1;
@@ -60,5 +60,6 @@ public class Controller {
             }
         }
     }
+
 }
 
